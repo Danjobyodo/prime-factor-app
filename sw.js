@@ -2,10 +2,10 @@
 const CACHE_NAME = 'prime-factor-app-cache-v1';
 // キャッシュするファイルのリスト
 const urlsToCache = [
-  '.', // index.htmlを指す
-  'index.html',
-  'script.js',
-  'images/icon-512x512.png'
+  '/prime-factor-app/',
+  '/prime-factor-app/index.html',
+  '/prime-factor-app/script.js',
+  '/prime-factor-app/images/icon-512x512.png'
 ];
 
 // 1. インストール処理
