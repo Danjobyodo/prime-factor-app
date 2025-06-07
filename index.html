@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素因数分解アプリ</title>
+    <style>
+        /* 簡単なデザインを追加 */
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        input {
+            padding: 0.5rem;
+            font-size: 1rem;
+            width: 200px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #result-text {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d9534f;
+            min-height: 1.5rem; /* 結果表示エリアの高さを確保 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>素因数分解アプリ</h1>
+        <p>好きな自然数を入力してください</p>
+        
+        <input type="number" id="number-input" value="1" min="1">
+        
+        <button id="calculate-button">素因数分解する</button>
+        
+        <p id="result-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
