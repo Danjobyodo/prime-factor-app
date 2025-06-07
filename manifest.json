@@ -1,14 +1,14 @@
 {
   "name": "素因数分解アプリ",
   "short_name": "素因数分解",
-  "start_url": ".",
+  "start_url": "/prime-factor-app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#007bff",
   "description": "シンプルな素因数分解を行うWebアプリです。",
   "icons": [
     {
-      "src": "images/icon-512x512.png",
+      "src": "/prime-factor-app/images/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
