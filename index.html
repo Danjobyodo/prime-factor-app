@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>素因数分解アプリ</title>
     <meta name="theme-color" content="#ffffff">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/prime-factor-app/manifest.json">
     <link rel="icon" href="/prime-factor-app/images/icon-512x512.png" type="image/png">
     <link rel="apple-touch-icon" href="/prime-factor-app/images/icon-512x512.png">
     <style>
@@ -70,15 +70,17 @@
         <p id="result-text"></p>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/prime-factor-app/script.js"></script>
+    
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/prime-factor-app/sw.js').then(registration => {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }).catch(err => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
+          navigator.serviceWorker.register('/prime-factor-app/sw.js', { scope: '/prime-factor-app/' })
+            .then(registration => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }).catch(err => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
         });
       }
     </script>
