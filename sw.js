@@ -5,7 +5,7 @@ const urlsToCache = [
   '/prime-factor-app/',
   '/prime-factor-app/index.html',
   '/prime-factor-app/script.js',
-  '/prime-factor-app/images/icon-512x512.png'
+  '/prime-factor-app/images/icon-pf512x512.png'
 ];
 
 // 1. インストール処理
