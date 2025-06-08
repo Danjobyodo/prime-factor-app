@@ -1,6 +1,7 @@
 {
   "name": "素因数分解アプリ",
   "short_name": "素因数分解",
+  "scope": "/prime-factor-app/"
   "start_url": "/prime-factor-app/",
   "display": "standalone",
   "background_color": "#ffffff",
