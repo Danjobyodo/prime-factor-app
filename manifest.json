@@ -9,7 +9,7 @@
   "description": "シンプルな素因数分解を行うWebアプリです。",
   "icons": [
     {
-      "src": "/prime-factor-app/images/icon-512x512.png",
+      "src": "/prime-factor-app/images/icon-pf512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
