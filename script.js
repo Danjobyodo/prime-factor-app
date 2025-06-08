@@ -4,7 +4,7 @@ const calculateButton = document.getElementById('calculate-button');
 const resultText = document.getElementById('result-text');
 
 /**
- * 素因数分解を行う関数 (Devide.swiftのロジックに相当)
+ * 素因数分解を行う関数
  * @param {number} num - 素因数分解する整数
  * @returns {string} - 分解結果の文字列
  */
@@ -21,7 +21,7 @@ function primeFactorize(num) {
 
     // 3以上の奇数で割っていく
     divisor = 3;
-    // 割る数の2乗がnを超えるまで調べればOK (sqrt(n)までと同じ意味)
+    // 割る数の2乗がnを超えるまで調べればOK
     while (divisor * divisor <= n) {
         if (n % divisor === 0) {
             factors.push(divisor);
@@ -40,17 +40,15 @@ function primeFactorize(num) {
     return factors.join(' × ');
 }
 
-
 // ボタンがクリックされたときの処理
 calculateButton.addEventListener('click', () => {
     // 入力値を取得し、整数に変換
     const inputValue = parseInt(numberInput.value, 10);
 
-    // Swiftコードのバリデーションに相当
+    // バリデーション
     if (isNaN(inputValue) || inputValue < 2) {
         resultText.textContent = '2以上の整数を入れてね';
     } else if (inputValue >= 1000000000000) {
-        // Swiftの制限と同じ値に設定
         resultText.textContent = 'でかすぎ';
     } else {
         // 素因数分解を実行して結果を表示
